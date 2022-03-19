@@ -11,3 +11,5 @@ This is a solution to the [Stats preview card component on Frontend Mentor](http
 -   Flexbox
 
 ### Deploy of the webpage
+
+https://wisdum-dev.github.io/stats-preview-card-component-main/
