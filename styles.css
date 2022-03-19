@@ -1,0 +1,175 @@
+:root {
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white-two: hsla(0, 0%, 100%, 0.6);
+    --weight-one: 400;
+    --weight-two: 700;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.insights-card {
+    box-shadow: 1px 1px 20px rgb(0, 0, 0);
+    margin-top: auto;
+
+    display: flex;
+}
+
+.insights-card_details {
+    background-color: var(--dark-desaturated-blue);
+    width: 36.25rem;
+    height: 27.875rem;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.insights-description {
+    font-family: Inter, 'sans-serif';
+    padding-left: 6.25rem;
+    padding-top: 2.1875rem;
+}
+
+.insights-title {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: var(--weight-two);
+}
+
+.insights-title_span {
+    color: var(--soft-violet);
+}
+
+.insights-p {
+    color: var(--slightly-transparent-white);
+    line-height: 1.6875rem;
+    font-weight: var(--weight-one);
+}
+
+.details-service {
+    font-family: Lexend Deca, 'sans-serif';
+    color: var(--white);
+    padding-left: 1.25rem;
+    padding-top: 2.5rem;
+
+    display: flex;
+}
+
+.details-service p {
+    padding-left: 4.6875rem;
+}
+
+.companies,
+.templates,
+.queries {
+    font-weight: var(--weight-two);
+    font-size: 1.5625rem;
+}
+
+.companies-span,
+.templates-span,
+.queries-span {
+    font-weight: var(--weight-one);
+    font-size: 1rem;
+    color: var(--slightly-transparent-white-two);
+}
+
+.image-container {
+    background-color: var(--soft-violet);
+    width: 33.75rem;
+    height: 27.875rem;
+    border-radius: 0px 12px 12px 0px;
+}
+
+.image {
+    opacity: 0.75;
+    border-radius: 0px 10px 10px 0px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1131px) {
+    .insights-card {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .image {
+        border-radius: 10px 10px 0px 0px;
+        width: 384px;
+        height: 290px;
+    }
+
+    .image-container {
+        width: 384px;
+        height: 290px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .insights-card_details {
+        width: 384px;
+        height: 646px;
+        border-radius: 0px 0px 10px 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .insights-description {
+        text-align: center;
+        padding: 0;
+    }
+
+    .insights-title {
+        text-align: center;
+    }
+
+    .details-service {
+        text-align: center;
+        display: block;
+        padding: 0;
+    }
+
+    .details-service p {
+        padding-left: 0;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .image {
+        width: 340px;
+        height: 230px;
+    }
+
+    .image-container {
+        width: 340px;
+        height: 230px;
+    }
+
+    .insights-card_details {
+        width: 340px;
+        height: 646px;
+    }
+
+    .insights-description {
+        font-size: 14px;
+    }
+
+    .insights-title {
+        font-size: 30px;
+    }
+}
